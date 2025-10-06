@@ -1,0 +1,11 @@
+# Abaikan virtual environment
+myenv/
+venv/
+
+# Abaikan file database dan cache
+db.sqlite3
+__pycache__/
+*.pyc
+
+# Abaikan folder VS Code
+.vscode/
