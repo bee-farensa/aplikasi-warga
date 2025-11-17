@@ -6,14 +6,14 @@
 <body>
     <h1>Hapus Pengaduan</h1>
     <p>Apakah Anda yakin ingin menghapus pengaduan dengan subjek: 
-        <strong>{{ object.subjek }}</strong>
-        yang dibuat pada tanggal {{ object.tanggal_pengaduan }}?
+        <strong>{{ object.judul }}</strong>
+        yang dibuat pada tanggal {{ object.tanggal_lapor }}?
     </p>
 
     <form method="post">
         {% csrf_token %}
         <button type="submit">Ya, Hapus Pengaduan</button>
-        <a href="{% url 'warga-detail' object.warga.pk %}">Batal</a>
+        <a href="{% url 'warga-detail' object.pelapor.pk %}">Batal</a>
     </form>
 </body>
 </html>
